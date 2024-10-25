@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <meta name="description" content="En esta pagina se puede hacer el inicio de sesión">
+    <meta name="keywords" content="CEI, Diseño Web, HTML, CSS, Cocina, Recetas">
+    <meta name="author" content="Liz Claudia Espinosa">
+    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 <body>
-    
+    <div class="container">
+        <div class="img">
+            <img  src="../img/login.webp" alt="Logo">
+        </div>
+       
+        <div class="form">
+            <div class="titulo">
+                <img src="../img/logo.png" alt="Logo de pagina"
+            />
+            <h1> Bienvenido!</h1>
+            </div>
+            
+            <p >Inicia sesión para acceder a contenido exclusivo y participar en nuestros desafíos culinarios.</p>
+            <form action="./login.html" method="POST">
+                <label for="user">Usuario</label>
+                <input type="text" id="user" name="user" required />
+          
+                <label for="pass">Clave</label>
+                <input type="password" id="pass" name="pass" required />
+
+                <input class="button" type="submit" value="Ingresar al portal" />
+            </form>
+            <p>No tienes cuenta <a href="./register.html">Registrate</a></p>
+        </div>
+
+    </div>
 </body>
 </html>

@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    border-radius: 200px 15px 200px 15px;
+    border: 2px solid #afca61;
+    align-content: center;
+    padding: 20px;
+    margin: 20px;
+    overflow: hidden; /* Oculta el contenido que se salga del borde */
+    width: 550px; 
+    height: 550px; 
+}
+.img img {
+    width: 100%; /* La imagen ocupará todo el ancho y alto del contenedor */
+    height: 100%; 
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción */
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 40px;
+    width: 100vw;
+    align-items: center;
+}
+
+.form h1{
+    margin: 10px;
+    font-size: 40px;
+    font-weight: initial;
+    color: #d49839;
+}
+
+input {
+    width: 100%; 
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+  }
+
+  .checkbox {
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center;
+    flex-wrap: nowrap; /* Evita que los elementos se desborden */
+    padding: 10px;
+  
+}
+
+.checkbox input {
+    width: auto; /* Ancho automático */
+    margin: 10px; /* Sin margen */
+}
+.checkbox label{
+    margin: 0 ;
+}
+
+
+
+
+  .button {
+    background-color: #afca61; /* Color de fondo verde claro */
+    border: 2px solid black;   /* Borde negro */
+    
+    box-shadow: inset 10px 10px 10px #adc344;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;        /* Espaciado interno */
+    color: black;              /* Color del texto */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.2s ease; /* Transición suave al pasar el mouse */
+    
+}
+
+/* Efecto al pasar el mouse */
+.button:hover {
+    background-color: #adc344; /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: inset 10px 10px 10px #afca61;
+}

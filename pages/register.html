@@ -1,11 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registro</title>
+    <meta name="description" content="En esta pagina se puede hacer el registro de un usuario">
+    <meta name="keywords" content="CEI, Diseño Web, HTML, CSS, Cocina, Recetas">
+    <meta name="author" content="Liz Claudia Espinosa">
+    <link rel="stylesheet" href="../css/register.css">
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="img">
+            <img src="../img/login.webp" alt="Logo">
+        </div>
+
+        <div class="form">
+            <h1>Crear una cuenta!</h1>
+            <form action="./register.html" method="POST">
+                <labe for="email">Email</labe>
+                <input type="email" id="email" name="email" />
+
+                <labe for="pass">Password</labe>
+                <input type="text" id="pass" name="pass" />
+
+                <labe for="confirm-pass">Confirmar Password</labe>
+                <input type="password" id="confirm-pass" name="confirm-pass" />
+
+                <div class="checkbox">
+                        <input type="checkbox" id="tyc" name="tyc">
+                        <label for="tyc">Acepto <a href="./terms">Terminos y Condiciones</a></label>
+
+                </div>
+               
+                <input class="button" type="submit" value="Resgitrarse" />
+
+
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
