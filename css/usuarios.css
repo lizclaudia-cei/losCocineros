@@ -1,0 +1,249 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.content-usuarios {
+    flex: 1;
+    justify-content: space-between;
+}
+
+/* #usuarios { */
+/* color: white; */
+/* } */
+
+.imagen-comunidad {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen-comunidad img {
+    max-width: 100%;
+    height: 850px;
+    min-width: 550px;
+    background-color: aqua;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.titulo-usuarios {
+    padding: 20px;
+    color: rgb(17, 17, 17);
+    font-size: 32px;
+}
+
+.parrafo-usuarios {
+    padding: 20px;
+    color: #323963;
+    font-size: 24px;
+}
+
+.chat-container img {
+    width: 350px;
+    height: 690px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.mensaje {
+    border: 1px solid wheat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #afca61;
+
+
+}
+
+.other {
+    background-color: #b1b1b1;
+
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 350px;
+    max-width: 350px;
+    height: 450px;
+    margin: 45px;
+    border: 1 dashed rgb(134, 134, 134);
+    box-shadow: 3px 3px 20px 1px rgb(129, 128, 128);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.card .text {
+    padding: 10px;
+}
+
+.card .text h3 {
+    padding: 10px;
+}
+
+.card .text p {
+    padding: 10px;
+
+}
+
+@media (max-width: 1684px) {
+    .chat-container {
+        display: none;
+    }
+
+}
+
+span {
+    justify-content: center;
+    display: flex;
+}
+
+.card button {
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 120px;
+    border-radius: 10px;
+    transition: width 0.4s ease;
+    background: linear-gradient(30deg, rgb(38, 43, 109), rgb(48, 90, 155), rgb(165, 207, 255));
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+}
+
+.buttons .seguir {
+    background: linear-gradient(40deg, #adc344, rgb(201, 235, 183));
+    color: black;
+}
+
+
+
+.explain-comunidad {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.entrada-comunidad {
+    width: 650px;
+    align-content: center;
+}
+
+.chat {
+    background: linear-gradient(40deg, rgb(14, 198, 211), rgb(114, 117, 115));
+    display: flex;
+    margin: 0;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.chat h2 {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    width: 200px;
+}
+
+#habla {
+    padding: 15px;
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#habla button {
+    margin: 10px;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    background-color: #dfe3e6;
+    font-size: 20px;
+    max-width: 200px;
+    border: none;
+}
+
+#habla button:hover {
+    background-color: aliceblue;
+}
+
+.bocadillos-chat {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bocadillos-chat img {
+    width: 350px;
+    height: 350px;
+}
+
+.boton-vermas {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.boton-vermas button {
+    border: 3 solid black;
+    transition: width 0.4s ease;
+    border-radius: 20px;
+    width: 400px;
+    height: 60px;
+    background-color: #afca61e0;
+    font-size: 20px;
+    max-width: 200px;
+
+}
+
+.boton-vermas button:hover {
+    background-color: #093655;
+    color: white;
+}
+
+.user-img {
+    border-radius: 10px;
+}
+
+.text p {
+    margin: 10px;
+}
