@@ -1,0 +1,40 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #afca61;
+    
+}
+.header ul{
+    display: flex;
+    gap:50px;
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+}
+.header ul a{
+    text-decoration: none;
+    font-size:20px;
+    margin: 20px;
+    font-weight: bold;
+    color:rgb(64, 63, 63)
+}
+
+/*  Para indicar que estas en esta página */
+#inicio{
+    color:white;
+}
+
+
+.logo{
+    border:2px solid black;
+    border-radius: 50px 50px 50px 50px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.logo img{
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}

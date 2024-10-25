@@ -1,41 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <meta name="descrption" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
-    <link rel="stylesheet" href="../css/styles.css">
-
-</head>
-<body>
+    <meta name="descrption" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+  </head>
+  <body>
     <div class="container">
-       
-        <div class="header">
-            <div class="logo">
-               <a href="./index.html"> <img src="../img/logo.png" alt="Logo de pagina"></a>
-            </div>
+      <div class="header">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="../img/logo.png" alt="Logo de pagina"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="./usuarios.html">Usuarios</a></li>
+          <li><a href="./resenas.html">Reseñas</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./perfil.html">Perfil</a></li>
+
+          <li><a id="inicio" href="./index.html">Inicio</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="titulo">
+            <img src="../img/logo.png" alt="Logo de pagina"
+            />
+            <h1> ChefConnect</h1>
+        </div>
+     
+        <!-- Esto serían los estilos que tienen las Imagenes por defecto -->
+        <img class="img" src="../img/comida.jpeg" alt="Imagen de lo que sea" />
+        
+        <p>
+          La comunidad en línea para los apasionados de la cocina y la comida
+          casera. Aquí, el amor por la gastronomía nos une. Comparte tus recetas
+          favoritas, descubre nuevas creaciones, y conecta con otros amantes de
+          la cocina en un espacio diseñado para inspirar y motivar.
+        </p>
+        <div class="maincontent">
+          <div class="whatToDo">
+            <h2>¿Qué puedes hacer en ChefConnect?</h2>
             <ul>
-                <li><a href="./usuarios.html">Usuarios</a></li>
-                <li><a href="./resenas.html">Reseñas</a></li>
-                <li><a href="./recetas.html">Recetas</a></li>
-                <li><a href="./perfil.html">Perfil</a></li>
-                <li><a id="inicio" href="./index.html">Inicio</a></li>
+              <li>
+                <b>Comparte tus recetas: </b>Desde los clásicos de la abuela
+                hasta tus propias creaciones. Inspira a otros con tus platillos
+                y descubre nuevas ideas para tu próxima comida.
+              </li>
+              <li>
+                <b>Intercambios de comidas:</b> Organiza intercambios de
+                platillos con otros miembros de la comunidad y experimenta
+                sabores de distintas cocinas caseras.
+              </li>
+              <li>
+                <b>Desafíos culinarios:</b> Participa en retos semanales y
+                mensuales, mejora tus habilidades y compite por premios mientras
+                te diviertes.
+              </li>
             </ul>
+          </div>
+          <div class="enjoy">
+            <h2>Únete a una comunidad apasionada</h2>
+            <p>
+              Conoce a otros cocineros, tanto principiantes como expertos, y
+              disfruta de un ambiente donde el aprendizaje y la creatividad
+              culinaria se mezclan.
+            </p>
+          </div>
         </div>
-        <div class="content">
-            <!-- Esto serían los estilos que tienen las Imagenes por defecto -->
-            <img class="img" src="../img/comida.jpeg" alt="Imagen de lo que sea">
-          
-            <button class="button">
-            Entrar al citio
-            </button>
+
+        <button class="button">Entrar al citio</button>
+      </div>
+
+      <div class="footer">
+        <!-- Enlaces de navegación -->
+        <ul class="footer-nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./intercambios.html">Intercambios</a></li>
+          <li><a href="./desafios.html">Desafíos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./acerca.html">Acerca de nosotros</a></li>
+        </ul>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+          <p>Síguenos en:</p>
+          <a href="https://www.facebook.com/ChefConnect" target="_blank"
+            >Facebook</a
+          >
+          |
+          <a href="https://www.instagram.com/ChefConnect" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
         </div>
-        <div class="footer">
-            esto es el footer
+
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+          <p>
+            Contacto:
+            <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
+          </p>
         </div>
+
+        <!-- Políticas del sitio -->
+        <div class="footer-legal">
+          <a href="./privacidad.html">Política de Privacidad</a> |
+          <a href="./terminos.html">Términos y Condiciones</a>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-copyright">
+          <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>

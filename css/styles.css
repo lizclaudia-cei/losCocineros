@@ -5,49 +5,64 @@
     padding:0;
 }
 
+
 .container{
     display: flex;
     flex-direction: column;
     height: 100vh;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    background-color: #afca61;
-    
-}
+
 .content{
     display: flex;
     flex-direction: column;
     flex:1;
+    padding: 40px;
     align-items: center;
 }
-.footer{
-background-color: #afca61;
+.content h1{
+    margin: 10px;
+    font-size: 40px;
+    color: #d49839;
 }
-.header ul{
+
+.content p{
+    margin: 10px;
+    padding: 0px;
+    font-size: 20px;
+   
+}
+
+.maincontent{
     display: flex;
-    gap:50px;
-    padding: 10px;
+    align-items: space-around;
+    margin: 10px;
+    padding: 40px;
+    gap: 20px;
+}
+
+.maincontent h2{
+    color: #d49839;
+}
+
+.whatToDo ul{
+    
     align-items: center;
     list-style: none;
 }
-.header ul a{
-    text-decoration: none;
-    font-size:20px;
-    font-weight: bold;
-    color:rgb(64, 63, 63)
-}
-/*  Para indicar que estas en esta página */
- #inicio{
-    color:white;
+
+.whatToDo li{
+    margin: 10px;
 }
 
-.logo img{
-    padding: 10px;
-    width: 70px;
-    height: 70px;
+.enjoy{
+    align-items: center;
+}
+
+.enjoy p{
+    padding: 0;
+    color: black;
+    font-size: 16px;
 }
 
 .img{
@@ -57,11 +72,32 @@ background-color: #afca61;
     border-radius: 50px 50px 50px 50px;
 }
 
-.button{
+.button {
+    background-color: #e7ba2f; /* Color de fondo verde claro */
+    border: 2px solid black;   /* Borde negro */
+    
+    box-shadow: inset 10px 10px 10px #d49839;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;        /* Espaciado interno */
+    color: black;              /* Color del texto */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.2s ease; /* Transición suave al pasar el mouse */
+    
+}
+
+/* Efecto al pasar el mouse */
+.button:hover {
+    background-color: #d49839; /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: inset 10px 10px 10px #e7ba2f;
+}
+
+
+.titulo{
     display: flex;
-    justify-content: center;
-    background-color: #afca61;
-    border-radius: 50px 50px 50px 50px;
-    width: 100px;
-    border: 2px solid black;
+    flex-direction: row;
+
+}
+.titulo img{
+    width: 60px;
+    height: 60px;
 }

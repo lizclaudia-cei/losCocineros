@@ -1,0 +1,36 @@
+.footer {
+    background-color: #afca61;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+    
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav li {
+    display: inline;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.footer-social, .footer-contact, .footer-legal, .footer-newsletter, .footer-copyright {
+    margin: 10px 0;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
+}
