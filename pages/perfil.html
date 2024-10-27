@@ -4,8 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
-    <p>Hola Mundo</p>
+    <div class="header">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="../img/logo.png" alt="Logo de pagina"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="./usuarios.html">Usuarios</a></li>
+          <li><a href="./resenas.html">Reseñas</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a id="inicio" href="./perfil.html">Perfil</a></li>
+
+          <li><a  href="./index.html">Inicio</a></li>
+        </ul>
+      </div>
+    <div class="container">
+        
+
+        <!-- Foto de la persona -->
+        <div class="profile-picture">
+            <img src="../img/user.png" alt="Foto de persona">
+        </div>
+        <div class="main-content">
+          <h1>Información personal</h1>
+          <br>
+          <h3>Laura Gonzales</h3>
+          <p><b>Correo electrónico: </b> laura45@gmail.com</p>
+          <p><b>Edad: </b> 22</p>
+          <p><b>Genero: </b> Femenino</p>
+          <p><b>Idioma: </b>Español</p>
+          <br>
+          <hr>        
+        <!-- Danger Zone -->
+        <div class="danger-zone">
+            <h2>Zona de peligro</h2>
+            <br>
+            <p>Cambiar tu contraseña es una acción sensible. Al realizar este cambio, se cerrará tu sesión actual y deberás iniciar sesión nuevamente con la nueva contraseña. Por favor, asegúrate de recordar la nueva contraseña y no compartirla con nadie para mantener tu cuenta segura.</p>
+            <br>
+            <form action="./login.html" method="GET">
+              <div class="password-group">
+                <input type="password" name="password" placeholder="Contraseña actual"/>
+                <input type="password" name="password-confirmation" placeholder="Nueva contraseña"/>
+              </div>
+              
+            <input class="button" type="submit" value="Guardar"/>
+            </form>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="footer">
+        <!-- Enlaces de navegación -->
+        <ul class="footer-nav">
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./recetas.html">Recetas</a></li>
+          <li><a href="./intercambios.html">Intercambios</a></li>
+          <li><a href="./desafios.html">Desafíos</a></li>
+          <li><a href="./contacto.html">Contacto</a></li>
+          <li><a href="./acerca.html">Acerca de nosotros</a></li>
+        </ul>
+
+        <!-- Redes sociales -->
+        <div class="footer-social">
+          <p>Síguenos en:</p>
+          <a href="https://www.facebook.com/ChefConnect" target="_blank"
+            >Facebook</a
+          >
+          |
+          <a href="https://www.instagram.com/ChefConnect" target="_blank"
+            >Instagram</a
+          >
+          |
+          <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-contact">
+          <p>
+            Contacto:
+            <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
+          </p>
+        </div>
+
+        <!-- Políticas del sitio -->
+        <div class="footer-legal">
+          <a href="./privacidad.html">Política de Privacidad</a> |
+          <a href="./terminos.html">Términos y Condiciones</a>
+        </div>
+
+        <!-- Derechos de autor -->
+        <div class="footer-copyright">
+          <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
+        </div>
+      </div>
 </body>
 </html>
