@@ -1,12 +1,13 @@
 /* Reset CSS */
 /* Se agrego el reset porque agregaba un margin y 
 padding  por defecto que modificaba todo el header que estamos agregando  */
-*{
+* {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -133,14 +134,22 @@ span {
 }
 
 .card button {
-    border: 0;
-    color: white;
-    padding: 10px;
     width: 120px;
-    border-radius: 10px;
     transition: width 0.4s ease;
-    background: linear-gradient(30deg, rgb(38, 43, 109), rgb(48, 90, 155), rgb(165, 207, 255));
+    background: linear-gradient(30deg, #e7ba2f, rgb(243, 181, 66), rgb(220, 233, 40));
+    border: 2px solid black;
+    /* Borde negro */
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;
+    /* Espaciado interno */
+    color: black;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+
+
 }
+
 
 .buttons {
     display: flex;
@@ -201,17 +210,32 @@ button:hover {
 
 #habla button {
     margin: 10px;
-    border-radius: 20px;
+
     width: 400px;
     height: 60px;
-    background-color: #dfe3e6;
+
     font-size: 20px;
     max-width: 200px;
     border: none;
+
+    background-color: #e7ba2f;
+    /* Color de fondo verde claro */
+    border: 2px solid black;
+    /* Borde negro */
+    box-shadow: inset 10px 10px 10px #d49839;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;
+    /* Espaciado interno */
+    color: black;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.2s ease;
+    /* Transición suave al pasar el mouse */
 }
 
 #habla button:hover {
-    background-color: aliceblue;
+    background-color: rgb(194, 197, 22);
 }
 
 .bocadillos-chat {
@@ -232,19 +256,32 @@ button:hover {
 }
 
 .boton-vermas button {
-    border: 3 solid black;
-    transition: width 0.4s ease;
-    border-radius: 20px;
+    background-color: #e7ba2f;
+    /* Color de fondo verde claro */
+    border: 2px solid black;
+    /* Borde negro */
+
+    box-shadow: inset 10px 10px 10px #d49839;
+    border-radius: 255px 15px 225px 15px / 15px 225px 15px 225px;
+    padding: 10px 20px;
+    /* Espaciado interno */
+    color: black;
+    /* Color del texto */
+    cursor: pointer;
+    /* Cambia el cursor al pasar sobre el botón */
+    transition: all 0.2s ease;
+    /* Transición suave al pasar el mouse */
     width: 400px;
     height: 60px;
-    background-color: #afca61e0;
     font-size: 20px;
     max-width: 200px;
 
 }
 
 .boton-vermas button:hover {
-    background-color: #093655;
+    background-color: #d49839;
+    /* Cambia el color de fondo al pasar el mouse */
+    box-shadow: inset 10px 10px 10px #e7ba2f;
     color: white;
 }
 

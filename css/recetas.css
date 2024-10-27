@@ -1,0 +1,114 @@
+<style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #afca61;
+
+    }
+
+    .header ul {
+      display: flex;
+      gap: 50px;
+      padding: 10px;
+      align-items: center;
+      list-style: none;
+    }
+
+    .header ul a {
+      text-decoration: none;
+      font-size: 20px;
+      margin: 20px;
+      font-weight: bold;
+      color: rgb(64, 63, 63)
+    }
+
+    /*  Para indicar que estas en esta página */
+    #recetas {
+      color: white;
+    }
+
+
+
+    .logo {
+      border: 2px solid black;
+      border-radius: 50px 50px 50px 50px;
+      width: 70px;
+      height: 70px;
+      margin: 10px;
+    }
+
+    .logo img {
+      padding: 10px;
+      width: 70px;
+      height: 70px;
+    }
+
+    .grid {
+      display: flex;
+      justify-content: center;
+      grid-template-columns: minmax(200px, 1 fr);
+      gap: 25px;
+
+    }
+
+    .recipe-card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .recipe-card img {
+      width: 300px;
+      height: 160px;
+      flex-direction: row;
+    }
+
+    .recipe-card h3 {
+      padding: 10px;
+      color: #333;
+    }
+
+    .footer {
+      background-color: #afca61;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+      align-content: end;
+
+
+    }
+
+    .footer-nav {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .footer-nav li {
+      display: inline;
+    }
+
+    .footer-nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .footer-social,
+    .footer-contact,
+    .footer-legal,
+    .footer-newsletter,
+    .footer-copyright {
+      margin: 1px;
+    }
+
+    .footer-social a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
