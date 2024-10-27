@@ -1,11 +1,489 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Reseñas</title>
+    <meta name="description" content="Reseñas de recetas que hacen los usuarios">
+    <meta name="keywords" content="CEI, Diseño Web, HTML, CSS, Cocina, Recetas">
+    <meta name="author" content="Jaume Esquerdo">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer {
+            background-color: #afca61;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+
+
+        .footer-nav {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-nav li {
+            display: inline;
+        }
+
+        .footer-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer-social,
+        .footer-contact,
+        .footer-legal,
+        .footer-newsletter,
+        .footer-copyright {
+            margin: 10px 0;
+        }
+
+        .footer-social a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #afca61;
     
+}
+.header ul{
+    display: flex;
+    gap:50px;
+    padding: 10px;
+    align-items: center;
+    list-style: none;
+}
+.header ul a{
+    text-decoration: none;
+    font-size:20px;
+    margin: 20px;
+    font-weight: bold;
+    color:rgb(64, 63, 63)
+}
+
+/*  Para indicar que estas en esta página */
+#resenas-seccion{
+    color:white;
+}
+
+
+.logo{
+    border:2px solid black;
+    border-radius: 50px 50px 50px 50px;
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+}
+
+.logo img{
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .reseñas {
+            display: flex;
+            justify-content: center;
+        }
+
+        .reseñas img {
+            width: 300px;
+            margin: 50px;
+            height: 300px;
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .platos {
+            flex: 1 1 200px;
+            flex-wrap: wrap;
+            max-width: 550px;
+            min-width: 450px;
+            height: 850px;
+            flex-direction: column;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            overflow-y: auto;
+            justify-content: center;
+
+        }
+
+        .platos:hover {
+            max-width: 600px;
+            transition: max-width 0.30s;
+        }
+
+        .platos img {
+            max-width: 100%;
+            border-radius: 20px;
+
+        }
+
+        .reseñas-body {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            flex-wrap: wrap;
+
+        }
+
+        .calificacion {
+            display: flex;
+            justify-content: center;
+            max-width: 700px;
+
+            border: 1px solid black;
+
+            margin-bottom: 50px;
+            border-radius: 20px;
+            background-color: aliceblue;
+            flex-wrap: wrap;
+
+        }
+
+        #brocoli {
+            width: 100%;
+            height: 46%;
+            object-fit: cover;
+        }
+
+        #risotto {
+            width: 100%;
+            height: 46%;
+            object-fit: cover;
+        }
+
+        #tortilla {
+            width: 100%;
+            height: 46%;
+            object-fit: cover;
+        }
+
+        .autor {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .nombre {
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 5px;
+
+        }
+
+        .star {
+            width: 200px;
+            padding: 10px;
+
+        }
+
+        .star-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .reseña-content {
+            margin: 10px;
+            display: flex;
+            height: 200px;
+            align-items: center;
+
+        }
+
+        h4 {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        .made {
+            display: flex;
+            margin-top: auto;
+            padding: 30px;
+            justify-content: flex-end;
+        }
+
+        .guardar {
+            display: flex;
+            flex-direction: column;
+            justify-content: stretch;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #afca61;
+            box-shadow: 1px 2px 2px 2px #ccc;
+        }
+
+        .guardar:hover {
+            background-color: #9eb914;
+        }
+
+        hr {
+            width: 30%;
+            margin: auto;
+            margin-top: 10px;
+
+        }
+
+        .subir-imagen {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+        }
+
+        .subir-imagen h5 {
+            width: 100%;
+            font-size: 25px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #calificar {
+            width: 250px;
+            padding: 10px;
+        }
+
+        .fixed-textarea {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            bottom: 20px;
+            right: 700px;
+
+        }
+
+        #submmit-imagen {
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+
+
+
+        }
+
+        #form-subir {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .div-subir {
+            display: flex;
+            justify-content: center;
+        }
+
+        .calificacion h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        #guardarid {
+            background-color: #d49839;
+        }
+
+        #guardarid:hover {
+            background-color: #bd852d;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="../img/logo.png" alt="Logo de pagina" /></a>
+            </div>
+            <ul>
+                <li><a href="./usuarios.html">Usuarios</a></li>
+                <li><a id="resenas-seccion" href="./resenas.html">Reseñas</a></li>
+                <li><a href="./recetas.html">Recetas</a></li>
+                <li><a href="./perfil.html">Perfil</a></li>
+
+                <li><a href="./index.html">Inicio</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="reseñas-body">
+
+                <div class=" platos">
+                    <img id="risotto" src="/img/rissoto.avif" alt="risotto">
+                    <h4>Risotto</h4>
+                    <div class="star-container"><img class="star" src="/img/3estrellas.png"
+                            alt="puntuación 3 estrellas"></div>
+                    <p class="reseña-content">"Este risotto ha sido un éxito total! La textura quedó cremosa y el sabor
+                        increíble, especialmente
+                        con el toque del vino blanco y el parmesano al final."</p>
+
+                    <form action="" method="GET">
+
+                        <input class="guardar" type="submit" value="Guardar reseña">
+
+                    </form>
+
+                    <p class="made"><span class="autor">Receta hecha por:</span> <span class="nombre"> Antonio </span>
+                    </p>
+
+                </div>
+
+                <div class=" platos">
+                    <img id="tortilla" src="/img/tortilla patata.jpg" alt="tortilla">
+                    <h4>Tortilla de patatas</h4>
+                    <div class="star-container"><img class="star" src="/img/5estrellas.png" alt="Tortillón"></div>
+                    <p class="reseña-content">"¡Esta tortilla de patatas ha sido un éxito absoluto! La textura quedó
+                        increíblemente suave por dentro y con el exterior doradito y firme, justo como debe ser. La
+                        cebolla caramelizada le dio un toque dulce perfecto, mientras que las patatas estaban en el
+                        punto justo de cocción, ni muy blandas ni duras. La mezcla de huevos y patatas cuajó de manera
+                        perfecta, y el sabor era simplemente delicioso, con un toque de sal justo para resaltar todos
+                        los ingredientes. Sin duda, esta tortilla se lleva todas las estrellas, ¡repetiremos pronto."
+                    </p>
+
+                    <form action="" method="GET">
+
+                        <input class="guardar" type="submit" value="Guardar reseña">
+
+                    </form>
+
+                    <p class="made"><span class="autor">Receta hecha por:</span> <span class="nombre"> Maria </span>
+                    </p>
+
+                </div>
+
+                <div class="platos">
+                    <img id="brocoli" src="/img/ensalada.jpg" alt="ensalada">
+                    <h4>Ensalada de brócoli</h4>
+                    <div class="star-container"><img class="star" src="/img/1estrella.png" alt="brócoli"></div>
+                    <p class="reseña-content">"Intentamos hacer una ensalada de brócoli, pero, sinceramente, no salió
+                        como esperábamos. El brócoli quedó demasiado crudo, y el aderezo no se mezcló bien con los
+                        ingredientes. Había añadido algunos tomates cherry, pero se pasaron de maduros y terminaron
+                        haciendo la ensalada un poco pastosa. Incluso las nueces, que pensé que le darían un toque
+                        crujiente, no lograron salvar el plato. Tal vez con un poco más de cocción y un aderezo más
+                        suave hubiese mejorado, pero en esta ocasión, la ensalada no fue un éxito."</p>
+
+                    <form action="" method="GET">
+
+                        <input class="guardar" type="submit" value="Guardar reseña">
+
+                    </form>
+                    <p class="made"><span class="autor">Receta hecha por:</span> <span class="nombre"> Juan </span>
+                    </p>
+
+
+                </div>
+
+            </div>
+
+            <div class="calificacion">
+                <h2>Ahora es tu turno, califica una receta</h2>
+
+                <div class="div-subir">
+                    <div class="subir-imagen">
+
+                        <form id="form-subir" action="" method="GET">
+
+                            <input id="submmit-imagen" type="submit" value="Subir imagen">
+                        </form>
+                    </div>
+                    <div>
+
+                        <img id="calificar" src="/img/estrellas.png" alt="estrellas vacias">
+                        <form action="/carpetareseñas/intentoreseñas.html" method="GET">
+                            <textarea class="fixed-textarea" placeholder="Escribe aquí tu reseña" name="Texto de reseña"
+                                id=""></textarea>
+                            <input class="guardar" id="guardarid" type="submit" value="Subir mi reseña">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <!-- Enlaces de navegación -->
+            <ul class="footer-nav">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./recetas.html">Recetas</a></li>
+                <li><a href="./intercambios.html">Intercambios</a></li>
+                <li><a href="./desafios.html">Desafíos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./acerca.html">Acerca de nosotros</a></li>
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="footer-social">
+                <p>Síguenos en:</p>
+                <a href="https://www.facebook.com/ChefConnect" target="_blank">Facebook</a>
+                |
+                <a href="https://www.instagram.com/ChefConnect" target="_blank">Instagram</a>
+                |
+                <a href="https://twitter.com/ChefConnect" target="_blank">Twitter</a>
+            </div>
+
+            <!-- Información de contacto -->
+            <div class="footer-contact">
+                <p>
+                    Contacto:
+                    <a href="mailto:soporte@chefconnect.com">soporte@chefconnect.com</a>
+                </p>
+            </div>
+
+            <!-- Políticas del sitio -->
+            <div class="footer-legal">
+                <a href="./privacidad.html">Política de Privacidad</a> |
+                <a href="./terminos.html">Términos y Condiciones</a>
+            </div>
+
+            <!-- Derechos de autor -->
+            <div class="footer-copyright">
+                <p>&copy; 2024 ChefConnect. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
