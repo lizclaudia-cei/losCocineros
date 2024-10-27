@@ -20,10 +20,30 @@
 
         <div class="form">
             <h1>Crear una cuenta!</h1>
-            <form action="./register.html" method="POST">
+            <form action="./index.html" method="GET">
+
+                <labe for="name">Nombre</labe>
+                <input type="text" id="name" name="name" />
+
+                <div class="age-gender">
+                    
+                        <label id="age" for="age">Edad</label>
+                        <input type="number" id="age" name="age" />
+                    
+                    <div class="field">
+                        <label for="gender">Género</label>
+                        <div class="radio-group">
+                            <label><input type="radio" id="men" name="gender" value="men"/>Masculino</label>
+                            <label><input type="radio" id="female" name="gender" value="female"/>Femenino</label>
+                        </div>
+                    </div>
+                </div>
+                
+
                 <labe for="email">Email</labe>
                 <input type="email" id="email" name="email" />
-
+                
+                
                 <labe for="pass">Password</labe>
                 <input type="text" id="pass" name="pass" />
 
