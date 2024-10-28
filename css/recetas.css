@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 * {
   box-sizing: border-box;
@@ -18,67 +19,191 @@
       display: flex;
       flex-direction: row;
       gap: 25px;
+=======
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
 
-    }
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #afca61;
 
-    .recipe-card {
-      background-color: #f9f9f9;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-    }
+}
 
-    .recipe-card img {
-      width: 300px;
-      height: 160px;
-      flex-direction: row;
-    }
+.header ul {
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  align-items: center;
+  list-style: none;
+}
 
-    .recipe-card h3 {
-      padding: 10px;
-      color: #333;
-    }
+.header ul a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 20px;
+  font-weight: bold;
+  color: rgb(64, 63, 63)
+}
 
-    .footer {
-      background-color: #afca61;
-      padding: 20px;
-      text-align: center;
-      color: #333;
-      align-content: end;
+/*  Para indicar que estas en esta página */
+#recetas {
+  color: white;
+}
 
 
-    }
 
-    .footer-nav {
-      list-style: none;
-      padding: 0;
-      margin: 10px 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+.logo {
+  border: 2px solid black;
+  border-radius: 50px 50px 50px 50px;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+}
 
-    .footer-nav li {
-      display: inline;
-    }
+.logo img {
+  padding: 10px;
+  width: 70px;
+  height: 70px;
+}
 
-    .footer-nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
+.recetas {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  align-items: center;
+>>>>>>> Stashed changes
 
-    .footer-social,
-    .footer-contact,
-    .footer-legal,
-    .footer-newsletter,
-    .footer-copyright {
-      margin: 1px;
-    }
+}
 
+.grid {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: minmax(200px, 1 fr);
+  gap: 25px;
+
+}
+
+.recipe-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 300px;
+  height: 160px;
+  flex-direction: row;
+}
+
+.recipe-card h3 {
+  padding: 10px;
+  color: #333;
+}
+
+.challenges {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+  gap: 30px;
+
+
+}
+
+.grid-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+
+
+}
+
+<<<<<<< Updated upstream
     .footer-social a {
       text-decoration: none;
       color: #333;
     }
 
+=======
+.challenge {
+  background: rgb(242, 239, 239);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+
+}
+
+.challenge h3 {
+  color: #afca61;
+
+}
+
+.challenge p {
+  margin: 10px 0;
+
+}
+
+.grid-container h3 {
+  justify-content: center;
+  display: grid;
+  text-align: center;
+}
+
+.grid-container p {
+  display: grid;
+  gap: 30px;
+  text-align: center;
+
+}
+
+.footer {
+
+  background-color: #afca61;
+  padding: 20px;
+  text-align: center;
+  color: #333;
+ 
+
+
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-nav li {
+  display: inline;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.footer-social,
+.footer-contact,
+.footer-legal,
+.footer-newsletter,
+.footer-copyright {
+  margin: 1px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: #333;
+}
+>>>>>>> Stashed changes
