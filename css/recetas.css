@@ -1,52 +1,22 @@
-<style>
-    .header {
-      display: flex;
-      justify-content: space-between;
-      background-color: #afca61;
 
-    }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    .header ul {
-      display: flex;
-      gap: 50px;
-      padding: 10px;
-      align-items: center;
-      list-style: none;
-    }
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  padding: 40px;
+}
 
-    .header ul a {
-      text-decoration: none;
-      font-size: 20px;
-      margin: 20px;
-      font-weight: bold;
-      color: rgb(64, 63, 63)
-    }
-
-    /*  Para indicar que estas en esta página */
-    #recetas {
-      color: white;
-    }
-
-
-
-    .logo {
-      border: 2px solid black;
-      border-radius: 50px 50px 50px 50px;
-      width: 70px;
-      height: 70px;
-      margin: 10px;
-    }
-
-    .logo img {
-      padding: 10px;
-      width: 70px;
-      height: 70px;
-    }
 
     .grid {
       display: flex;
-      justify-content: center;
-      grid-template-columns: minmax(200px, 1 fr);
+      flex-direction: row;
       gap: 25px;
 
     }
@@ -111,4 +81,4 @@
       text-decoration: none;
       color: #333;
     }
-  </style>
+
