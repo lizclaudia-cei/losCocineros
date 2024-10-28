@@ -1,1 +1,2 @@
 # losCocineros
+Liz, Kristiyan, Jaume
