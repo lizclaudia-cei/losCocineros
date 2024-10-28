@@ -431,24 +431,23 @@
             <div class="calificacion">
                 <h2>Ahora es tu turno, califica una receta</h2>
 
-                <div class="div-subir">
-                    <div class="subir-imagen">
+                <form id="form-subir" action="" method="GET">
+                    <div class="div-subir">
+                        <div class="subir-imagen">
 
-                        <form id="form-subir" action="" method="GET">
 
                             <input id="submmit-imagen" type="submit" value="Subir imagen">
-                        </form>
-                    </div>
-                    <div>
 
-                        <img id="calificar" src="/img/estrellas.png" alt="estrellas vacias">
-                        <form action="/carpetareseñas/intentoreseñas.html" method="GET">
+                        </div>
+                        <div>
+
+                            <img id="calificar" src="/img/estrellas.png" alt="estrellas vacias">
                             <textarea class="fixed-textarea" placeholder="Escribe aquí tu reseña" name="Texto de reseña"
                                 id=""></textarea>
                             <input class="guardar" id="guardarid" type="submit" value="Subir mi reseña">
-                        </form>
+                        </div>
                     </div>
-                </div>
+                </form>
             </div>
 
         </div>
